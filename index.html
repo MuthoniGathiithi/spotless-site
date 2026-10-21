@@ -897,6 +897,49 @@ em { font-style: normal; }
 .mailbtn__ic { width: 30px; height: 30px; border-radius: 50%; background: #f3f3f4; display: grid; place-items: center; }
 .mailbtn__ic svg { width: 20px; height: 20px; }
 
+/* ===== Phone fixes ===== */
+.owner__photo .ph, .who__video .ph { min-height: 0; }
+.owner > *, .who > *, .r2 > *, .find > *, .two > *, .quote > *, .cgrid > * { min-width: 0; }
+.branch::before { background: linear-gradient(0deg, rgba(13,13,14,.97) 35%, rgba(13,13,14,.55) 70%, rgba(13,13,14,.35)); }
+@media (max-width: 1180px) {
+  .nav { -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); }
+}
+@media (max-width: 700px) {
+  .section, .rvs { padding-block: 56px; }
+  .wy__in { padding-top: 56px; padding-bottom: 56px; }
+  .big-title, .rvs h2, .wy h2 { font-size: clamp(2.1rem, 9vw, 2.8rem); }
+  .phero__in { padding: 170px 8px 48px; }
+  .phero h1 { font-size: clamp(2.5rem, 12vw, 3.4rem); }
+  .phero__panel { min-height: 0; }
+  .who__video .ph { aspect-ratio: 16 / 10; }
+  .owner__photo .ph { aspect-ratio: 4 / 3; }
+  .float__wa { padding: 13px; }
+  .float__wa svg { width: 24px; height: 24px; }
+  .fh__kick { letter-spacing: .14em; font-size: .7rem; }
+  .fh__kick::before, .fh__kick::after { width: 18px; }
+  .fh__sub { font-size: 1.5rem; }
+  .fhero__copy { padding-top: 150px; }
+  .fhero .btns { flex-direction: column; align-items: center; }
+  .rvs__head { flex-direction: column; align-items: start; }
+  .rv { padding: 22px; }
+  .rv blockquote { font-size: 1.05rem; }
+  .wy__c { padding: 20px; font-size: 1.25rem; }
+  .place__body { padding: 22px; }
+  .place h3 { font-size: 1.5rem; }
+  .branch { min-height: 340px; }
+  .branch__in { padding: 22px; }
+  .follow { flex-wrap: wrap; }
+  .ticker { padding: 14px 0; }
+  .scard__name { font-size: 1.2rem; left: 16px; bottom: 16px; }
+  .srail { grid-auto-columns: 72%; }
+  .footer__grid { gap: 18px; }
+  .wordmark { font-size: 2.6rem; }
+  .ticket__total strong { font-size: 1.5rem; }
+  .svx__t { font-size: 1.15rem; }
+  .cta h2 { font-size: 2.2rem; }
+}
+@media (max-width: 700px) { .head > .rail-nav { display: none; } }
+
 </style>
 </head>
 <body class="home">
